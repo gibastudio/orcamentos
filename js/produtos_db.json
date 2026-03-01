@@ -1,0 +1,29 @@
+{
+  "produtos": [
+    {
+      "codigo": "CA001",
+      "nome": "Caneca Personalizada",
+      "descricao": "Caneca de cerâmica 350ml com impressão personalizada de alta qualidade"
+    },
+    {
+      "codigo": "CA002",
+      "nome": "Caneca Premium",
+      "descricao": "Caneca premium 400ml com revestimento especial e design exclusivo"
+    },
+    {
+      "codigo": "CD001",
+      "nome": "Camiseta Básica",
+      "descricao": "Camiseta 100% algodão com estampa personalizada"
+    },
+    {
+      "codigo": "CD002",
+      "nome": "Camiseta Premium",
+      "descricao": "Camiseta premium com bordado ou estampa em relevo"
+    },
+    {
+      "codigo": "MG001",
+      "nome": "Mug Grande",
+      "descricao": "Mug de cerâmica 500ml com alça reforçada"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GibaStudio - Orçamentos</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/orc.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1><span style="color: #ff006e;">Giba</span><span style="color: #00d9ff;">Studio</span></h1>
+    <p>Sistema de Orçamento</p>
+  </div>
+
+  <div>
+    <div class="section-title">
+      <i class="fas fa-user"></i> Dados do Cliente
+    </div>
+    <div class="form-group">
+      <input id="nome" placeholder="Nome completo" type="text">
+    </div>
+    <div class="form-group">
+      <input id="telefone" placeholder="Telefone" type="tel">
+    </div>
+    <div class="form-group">
+      <input id="endereco" placeholder="Endereço" type="text">
+    </div>
+    <div class="form-group">
+      <input id="email" placeholder="E-mail" type="email">
+    </div>
+
+    <div class="section-title">
+      <i class="fas fa-box"></i> Produtos/Serviços
+    </div>
+    
+    <div class="product-controls">
+      <input id="codigo" placeholder="Código do produto (ex: CA001)" type="text">
+      <input id="valor" placeholder="Valor (R$)" type="number" step="0.01" min="0">
+      <button class="btn btn-add" onclick="adicionarProduto()">
+        <i class="fas fa-plus"></i> Adicionar
+      </button>
+    </div>
+
+    <div class="products-container" id="productsWrapper">
+      <div class="empty-state">
+        <i class="fas fa-inbox"></i>
+        <p>Nenhum produto adicionado ainda</p>
+      </div>
+    </div>
+
+    <div class="total-section">
+      <div class="total-label">TOTAL DO ORÇAMENTO</div>
+      <div class="total-value">R$ <span id="total">0.00</span></div>
+    </div>
+
+    <button class="btn btn-pdf" onclick="gerarPDF()">
+      <i class="fas fa-file-pdf"></i> Finalizar Orçamento
+    </button>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
