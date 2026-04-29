@@ -21,7 +21,7 @@ function verificarImagemProduto(codigo) {
   return new Promise((resolve) => {
     const img = new Image();
     // Tenta buscar a imagem pelo código do produto
-    const caminhoImagem = "./produtos/${codigo.toLowerCase()}.png";
+    const caminhoImagem = ./produtos/${codigo.toLowerCase()}.png;
     
     img.onload = function () {
       resolve(caminhoImagem);
