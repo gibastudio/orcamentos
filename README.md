@@ -17,6 +17,6 @@ Esse meu projeto foi baseado na minha empresa de criação de canecas personaliz
 
 * 25-04-26
 * Foi atualizado informação do index.html para utilizar o gitpages, assim podendo realizar testes da funcionalidade da página
-https://gibastudio.github.io/_orcamentos/
+https://gibastudio.github.io/orcamentos/
 
 
