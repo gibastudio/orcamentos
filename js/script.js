@@ -5,7 +5,7 @@ let produtosDB = [];
 // Carregar banco de dados de produtos ao iniciar
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response = await fetch("/js/produtos_db.json");
+    const response = await fetch("./js/produtos_db.json");
     produtosDB = await response.json();
     produtosDB = produtosDB.produtos;
   } catch (error) {
@@ -21,7 +21,7 @@ function verificarImagemProduto(codigo) {
   return new Promise((resolve) => {
     const img = new Image();
     // Tenta buscar a imagem pelo código do produto
-    const caminhoImagem = `produtos/${codigo.toLowerCase()}.png`;
+    const caminhoImagem = `./produtos/${codigo.toLowerCase()}.png`;
     
     img.onload = function () {
       resolve(caminhoImagem);
