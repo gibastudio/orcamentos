@@ -25,5 +25,10 @@
       "nome": "Mug Grande",
       "descricao": "Mug de cerâmica 500ml com alça reforçada"
     }
+    {
+      "codigo": "FRETE",
+      "nome": "FRETE",
+      "descricao": "Valor da entrada, até a residencia"
+    }
   ]
 }
